@@ -13,7 +13,7 @@ screen = pygame.display.set_mode((width, height), HWSURFACE)
 
 clock = pygame.time.Clock()
 
-questions = []
+mfont = pygame.font.SysFont('Calibri', 24)
 
 class Question:
     def __init__(self, question, answers, correct):
@@ -41,9 +41,10 @@ def serializeQuestions():
         tempq.pop(randq)
 
 if __name__ == "__main__":
+    questions = []
     serializeQuestions()
 
-    
+    curquestion = 0
 
     while True:
         for event in pygame.event.get():
@@ -51,9 +52,13 @@ if __name__ == "__main__":
                 pygame.quit()
                 sysexit()
 
-        screen.fill((20,20,20))
+        screen.fill((30,30,30))
+
+        pygame.draw.rect(screen, (255,250,250), [width//8, height//8, width-(width//4), height-(height//4)])
+
+        screen.blit(mfont.render(questions[curquestion].question), ())
+
 
 
         clock.tick(60)
-
         pygame.display.update()
