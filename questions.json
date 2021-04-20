@@ -1,18 +1,18 @@
 {
   "questions": [
     [
-      "What is clock speed measured in as of 2021?",
+      "What is clock speed measured\nin as of 2021?",
       [ "Watts", "Mega Hertz", "Bytes", "Giga Hertz" ],
       3
     ],
     [
-      "HAHAHHAHAHAH",
-      [ "Obama", "Hoogac", "Rion", "Refrag" ],
+      "Which CPU comonent contains\nthe decoder?",
+      [ "ALU", "Control\nUnit", "Registers", "" ],
       1
     ],
     [
-      "monke",
-      [ "Mikael", "Joe", "Evan", "CD-ROM" ],
+      "What does RAM stand for?",
+      [ "Random\nAccess\nMemory", "Right\nAccess\nMemory", "Random\nAccess\nMeter", "Random\nActive\nMemory" ],
       0
     ]
   ]
